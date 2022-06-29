@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SmokeTest(failed)">
+    <classes>
+      <class name="Test.UserLogOutPoz">
+        <methods>
+          <include name="AM4"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- Test.UserLogOutPoz -->
+      <class name="Test.UserLoginNeg">
+        <methods>
+          <include name="AM3"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- Test.UserLoginNeg -->
+      <class name="Test.RegistrationNeg">
+        <methods>
+          <include name="TearDown"/>
+          <include name="AM1"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- Test.RegistrationNeg -->
+      <class name="Test.RegistrationPoz">
+        <methods>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Test.RegistrationPoz -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [Test] -->
